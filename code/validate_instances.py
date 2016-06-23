@@ -29,10 +29,12 @@ def validate_instance(filename, error_printing):
 
     print("...done")
 
-
-validate_instance("GEO-GSE46964.json", 2)
-validate_instance("ClinicalTrials.gov-NCT00001372.json", 2)
-validate_instance("PDB-5AEM.json", 2)
-validate_instance("Uniprot-P77967.json", 2)
-validate_instance("DBgap-phs000979.v1.p1.json", 2)
-
+if __name__ == '__main__':
+    import sys
+    if 1 < len(sys.argv):
+        for i in range(1, len(sys.argv) ):
+            fname = sys.argv[i]
+            validate_instance( fname, 2 )
+    else:
+        print('format is: validate_instance.py [input file]')
+        sys.exit(1)
