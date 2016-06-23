@@ -4,19 +4,22 @@ import json,os
 from jsonschema import RefResolver, Draft4Validator
 from os.path import join
 
-
 def validate_instance(filename, error_printing, path = None):
-    schemasPath = os.path.abspath("../json-schemas")
-    #path = "../examples"
+    print('Validating %s ' % filename )
     if None != path:
-        instance = json.load(open(join(path,filename)))
+        with open(join(path,filename)) as inp:
+            validate_instance_text( inp.read() , error_printing)
     else:
-        instance = json.load(open(filename))
+        with open(filename) as inp:
+            validate_instance_text( inp.read() , error_printing)
+
+def validate_instance_text(text, error_printing ):
+    instance = json.loads( text )
+    schemasPath = os.path.abspath("../json-schemas")
     datasetSchema = json.load(open(join(schemasPath,"dataset_schema.json")))
     instrumentSchema = json.load(open(join(schemasPath,"instrument_schema.json")))
     resolver = RefResolver('file://'+schemasPath+'/'+"dataset_schema.json", datasetSchema) #, base_uri=schemasPath)
     validator = Draft4Validator(datasetSchema, resolver=resolver)
-    print("Validating ", filename)
 
     if (error_printing == 0):
         errors = sorted(validator.iter_errors(instance), key=lambda e: e.path)
