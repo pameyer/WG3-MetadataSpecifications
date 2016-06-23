@@ -32,6 +32,8 @@ The document provides links to the different appendices files.
 The python code included in the repository validates the JSON schemas and the JSON instances against the schemas.
 To execute the code, it is recommended to use a virtual environment.
 
+Known to work under python 3.5.1.
+
 1. First install the virtual environment via `pip`:
    `pip install virtualenv`
 2. Then, activate the virtual environment:
