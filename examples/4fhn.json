@@ -1,0 +1,94 @@
+{
+	"identifiers":[{"identifier":"4FHN","identifierSource":"PDB"}],
+	"title":"NUP37-NUP120 FULL-LENGTH COMPLEX FROM SCHIZOSACCHAROMYCES POMBE",
+	"types":
+	[
+		{"information":{"value":"3d structure"}}
+	],
+	"creators":
+	[
+		{"fullName":"S.BILOKAPIC"},
+		{"fullName":"T.U.SCHWARTZ"}
+	],
+	"isCitedBy":
+	[
+		{
+			"identifiers":
+			[
+				{"identifier":"22955883","identifierSource":"PMID"},
+				{"identifier":"10.1073/PNAS.1205151109","identifierSource":"doi"}
+			]
+		}
+	],
+	"distributions":
+	[
+		{"dates":[{"date":"2012-06-06","type":{"value":"release date"}}]}
+	],
+	"hasPart":
+	[
+		{
+			"title":"4fhn model",
+			"types":
+			[
+				{"information":{"value":"3d model"}}
+			],
+			"creators":
+			[
+				{"fullName":"S.BILOKAPIC"},
+				{"fullName":"T.U.SCHWARTZ"}
+			],
+			"distributions":
+			[
+			{
+				"dates":[{"date":"2012-06-06","type":{"value":"release date"}}],
+				"accessModalities":
+				[
+					{
+						"landingPage":"http://identifiers.org/pdb/4FHN",
+						"accessURL":"http://www.rcsb.org/pdb/files/4FHN.pdb.gz"
+					}
+				]
+			}
+			],
+			"extraProperties":
+			[
+				{
+					"category":"dataset_class",
+					"values": ["model"]
+				}
+			]
+		},
+		{
+			"title":"4fhn structure factor amplitudes",
+			"types":
+			[
+				{"information":{"value":"structure factor amplitudes"}}
+			],
+			"creators":
+			[
+				{"fullName":"S.BILOKAPIC"},
+				{"fullName":"T.U.SCHWARTZ"}
+			],
+			"distributions":
+			[
+			{
+				"dates":[{"date":"2012-06-06","type":{"value":"release date"}}],
+				"accessModalities":
+				[
+					{
+						"landingPage":"http://identifiers.org/pdb/4FHN",
+						"accessURL":"http://files.rcsb.org/download/4FHN-sf.cif.gz"
+					}
+				]
+			}
+			],
+			"extraProperties":
+			[
+				{
+					"category":"dataset_class",
+					"values": ["processed experimental dataset"]
+				}
+			]
+		}
+	]
+}
