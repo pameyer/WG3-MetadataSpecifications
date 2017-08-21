@@ -1,0 +1,59 @@
+{
+	"identifiers":
+	[
+		{"identifier" : "10.15785/SBGRID/179","identifierSource" : "DOI"}
+	],
+	"title":"X-Ray Diffraction data from Nup37-Nup120 full-length complex from Schizosaccharomyces pombe, source of 4FHN structure",
+	"types":
+	[
+		{"information": {"value":"X-Ray Diffraction"} }
+	],
+	"isAbout":
+	[
+		{"name":"Nup37-Nup120 full-length complex from Schizosaccharomyces pombe"}
+	],
+	"creators":
+	[ 
+		{"fullName":"Bilokapic, Silvija"},
+		{"fullName":"Schwartz, Thomas"}
+	],
+	"distributions":
+	[
+		{
+			"dates":
+			[
+				{"date":"2010-02-19","type":{"value":"creation"} },
+				{"date":"2015-10-06","type":{"value":"publication date"} }
+			],
+			"accessModalities":
+			[
+				{"landingPage":"https://data.sbgrid.org/dataset/179","accessURL":"rsync://data.sbgrid.org/10.15785/SBGRID/179"},
+				{"landingPage":"https://data.sbgrid.org/dataset/179","accessURL":"rsync://sbgrid.icm.uu.se/10.15785/SBGRID/179"},
+				{"landingPage":"https://data.sbgrid.org/dataset/179","accessURL":"rsync://sbgrid.pasteur.edu/10.15785/SBGRID/179"},
+				{"landingPage":"https://data.sbgrid.org/dataset/179","accessURL":"rsync://sbgrid.ncpss.org/10.15785/SBGRID/179"}
+				
+			]
+		}
+	],
+	"isCitedBy":
+	[
+		{
+			"identifiers":
+			[
+				{"identifier":"10.1073/pnas.1205151109","identifierSource":"DOI"}
+			]
+		}
+	],
+	"relatedIdentifiers":
+	[
+		{"identifier":"10.15785/SBGRID/180","identifierSource":"DOI","relationType":"relatedTo"},
+		{"identifier":"4FHN", "identifierSource":"PDB", "relationType":"relatedTo"}  
+	],
+        "extraProperties":
+        [
+		{
+			"category":"dataset_class",
+			"values": ["raw experimental dataset"]
+		}
+        ]
+}
